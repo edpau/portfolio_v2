@@ -1,13 +1,13 @@
 :root {
     --color-primary: #ECE7E1;
     --color-secondary: #E2BD9A;
-    --color-text-on-primary: #ffffff;
+    --color-text-on-primary: #424242;
     --color-text-on-secondary: #000000;
 
     --color-nav-primary: #ECE7E1;
     --color-nav-primary-text: var(--color-text-on-primary);
     --color-nav-secondary: #424242;
-    --color-nav-secondary-text: var(--color-text-on-secondary);
+    --color-nav-secondary-text: #000000;
 
     --font-primary:  "Inter", sans-serif;
     --font-secondary: "Oxygen mono", monospace;
@@ -53,7 +53,7 @@ html {
   font-family: var(--font-secondary);
   font-size: 80%;
   background-color: var(--color-nav-primary);
-  color: var(--color-nav-secondary);
+  color: var(--color-nav-primary-text);
   padding: 2rem 1rem;
 }
 
@@ -82,14 +82,26 @@ html {
 }
 
 .nav__link {
-  color: var(--color-nav-secondary);
+  color: var(--color-nav-primary-text);
   text-decoration: none;
   display: block;
 }
 
-.nav__link:hover {
-  color: var(--color-nav-secondary-text)
+.nav__link:not(.nav__link--resume):hover {
+  color: var(--color-nav-secondary-text);
 }
+
+.nav__link--resume {
+  background-color: var(--color-nav-secondary);
+  color: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 16px;
+}
+
+.nav__link--resume:hover {
+   background-color: var(--color-nav-secondary-text);
+}
+
 
 @media (min-width: 850px) {
   .nav {
