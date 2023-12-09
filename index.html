@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- TODO meta data for description is search engine name = "description, content" -->
+    <!-- TODO favicon -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward Pau</title>
@@ -10,11 +13,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./styles/index.css">
 
 
 </head>
-<body>
-    
+
+<body class="body">
+    <header class="header">
+        <!-- <a class="header__link" href="/">Edward Pau</a> -->
+        <nav class="nav">
+            <ul class="nav__list">
+
+                <li class="nav__list-item" href="#project">
+                    <h1>
+                        <a class="nav__link" href="index.html">
+                            <span class="nav__list-icon--main fa-solid fa-terminal" aria-hidden="true"></span>
+                            <span>Edward Pau</span>
+                        </a>
+                    </h1>
+                </li>
+                <li class="nav__list-item" href="#project">Work</li>
+                <li class="nav__list-item">About</li>
+                <li class="nav__list-item">Contact</li>
+                <!-- TODO change icon to SVG, but sr-only using cloudflare -->
+                <li class="nav__list-item">
+                    <a class="nav__link" href="https://www.linkedin.com/in/edwardpau/" target="_blank">
+                        <span class="nav__list-icon fa-brands fa-linkedin" aria-hidden="true"></span>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link" href="https://github.com/edpau?tab=repositories" target="_blank">
+                        <span class="fa-brands fa-github" aria-hidden="true"></span>
+                        <span class="sr-only">Github</span>
+                    </a>
+                </li>
+                <!-- TODO change it to button, remove mobile and update email in the CV -->
+                <li>
+                    <a class="nav__link"
+                        href="https://drive.google.com/file/d/1EHAXx4wn2h4XQSe6Ui044rlvLo9H04VR/view?usp=share_link"
+                        target="_blank">Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <section id="intro"></section>
+        <section id="about-me"></section>
+        <section id="works"></section>
+        <section id="contact-me"></section>
+
+    </main>
+
 </body>
+
 </html>

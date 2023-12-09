@@ -1,12 +1,105 @@
 :root {
-    --color-primary: #B1D5E5;
+    --color-primary: #ECE7E1;
     --color-secondary: #E2BD9A;
     --color-text-on-primary: #ffffff;
     --color-text-on-secondary: #000000;
 
-    --font-family:  "Inter", sans-serif;
+    --color-nav-primary: #ECE7E1;
+    --color-nav-primary-text: var(--color-text-on-primary);
+    --color-nav-secondary: #424242;
+    --color-nav-secondary-text: var(--color-text-on-secondary);
+
+    --font-primary:  "Inter", sans-serif;
+    --font-secondary: "Oxygen mono", monospace;
+    --font-size: 1.3rem;
 }
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  /* generic styles for the page */
+
+  .body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-primary);
+    color: var(--color-text-on-primary);
+    font-size: var(--font-size);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
 
 .body {
     font-family: var(--font-family);
+}
+
+
+
+/* navigation */
+
+.nav {
+  font-family: var(--font-secondary);
+  font-size: 80%;
+  background-color: var(--color-nav-primary);
+  color: var(--color-nav-secondary);
+  padding: 2rem 1rem;
+}
+
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem 2rem;
+}
+
+.nav__list-item:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.nav__list-icon {
+  font-size: 150%;
+}
+
+.nav__list-icon--main {
+  font-size: 100%
+}
+
+.nav__link {
+  color: var(--color-nav-secondary);
+  text-decoration: none;
+  display: block;
+}
+
+.nav__link:hover {
+  color: var(--color-nav-secondary-text)
+}
+
+@media (min-width: 850px) {
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .nav__list-item:first-child{
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
