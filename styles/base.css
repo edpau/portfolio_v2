@@ -3,6 +3,7 @@
     --color-secondary: #E2BD9A;
     --color-text-on-primary: #424242;
     --color-text-on-secondary: #000000;
+    --color-text-on-third: yellow;
 
     --color-nav-primary: #ECE7E1;
     --color-nav-primary-text: var(--color-text-on-primary);
@@ -43,6 +44,26 @@ html {
 
 .body {
     font-family: var(--font-family);
+}
+
+a {
+  color: var(--color-text-on-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-text-on-third);
+}
+
+/* background color divs */
+
+.gradient {
+  background: linear-gradient(
+    90deg, 
+    rgba(66,66,66,1) 0%, 
+    rgba(190,190,190,1) 100%
+  );
+  height: 2px
 }
 
 
