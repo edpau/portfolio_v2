@@ -67,17 +67,23 @@
     <main class="main">
 
         <section id="intro">
-            <p class="name">Hi, my name is <span>Edward Pau.</span></p>
-            
-            <h2>I am a front-end developer.</h2>
-            
-            <p>I'm a developer, a designer specializing in JS, TS, React.js, CSS and HTML.</p>
-            
-            <p>
-                Currently, I'm working at
-                <a href="https://www.linkedin.com/company/health-boss-uk/?viewAsMember=true" target="_blank">Health Boss</a>.
-            </p>
+            <div class="intro__content">
+                <h2 class="intro__name">Hi, I'm <spa class="intro__name--Edward">Edward</span></h2>
+                <p class="intro__job">Front-End Developer</p>
+                <!-- TODO add contact and resume into button -->
+                <div class="button-container">
+                    <button class="button button--primary">Contact Me <img class="button__icon" src="./icons/contact.svg"
+                            alt="contact icon"></button>
+                    <button class="button button--secondary">Resume</button>
+                </div>
+            </div>
+           
+            <div class="intro__image-container">
+                <img class="intro__image" src="./img/intro_pic.PNG" alt="Edward cartoon photo waving hand">
+            </div>
         </section>
+        <div class="gradient"></div>
+    
 
         <section id="about-me"></section>
         <section id="works"></section>
