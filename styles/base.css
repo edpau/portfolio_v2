@@ -17,7 +17,7 @@
     --color-button-border: var(--color-text-on-primary);
     --color-button-primary-bg: var(--color-text-on-primary);
     --color-button-primary-text: var(--color-primary);
-    --color-button-secondary-bg: var(--color-primary);
+    --color-button-secondary-bg: var(--color-secondary);
     --color-button-secondary-text: var(--color-text-on-primary);
 }
 
@@ -172,7 +172,7 @@ a:hover {
 }
 
 
-@media (min-width: 860px) {
+@media (min-width: 850px) {
   .nav {
     max-width: 1200px;
     margin: 0 auto;

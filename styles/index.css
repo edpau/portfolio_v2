@@ -54,8 +54,12 @@
     max-height: 420px;
   }
 
-#aboutMe p {
-    text-align: left;
+.aboutMe__text{
+  background-color: var(--color-secondary);
+  text-align: left;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
 }
 
 .aboutMe__skills-heading {
@@ -158,4 +162,46 @@
   .aboutMe__skills-list{
     justify-content: flex-start;
   }
+
+
+
+  .myWork__article{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+    }
+    #myWorks {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+   .work__img {
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+    .work {
+        order: 2;
+        text-align: right;
+        grid-column: 5/11;
+        grid-row: 1/2;
+    }
+    /* over ride above flexbox justify content in mobile */
+    .work__tech-list{
+        justify-content: flex-end;
+    }
+    .myWork__article--reverse .work{
+        grid-column: 1/7;
+        order:2;
+        text-align: left;
+    }
+
+   .myWork__article--reverse .work__img {
+        grid-column: 6/11;
+        grid-row: 1/2;
+        border: 5px solid red;
+    }
+    .myWork__article--reverse .work__tech-list {
+        justify-content: flex-start;
+    }
+
+
 }
