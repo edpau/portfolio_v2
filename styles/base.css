@@ -61,6 +61,7 @@ a:hover {
   color: var(--color-text-on-third);
 }
 
+
 /* background color divs */
 
 .gradient {
@@ -171,7 +172,7 @@ a:hover {
 }
 
 
-@media (min-width: 850px) {
+@media (min-width: 860px) {
   .nav {
     max-width: 1200px;
     margin: 0 auto;

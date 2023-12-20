@@ -1,50 +1,92 @@
 @import "./base.css";
 
-.main{
-    margin: 0;
+.main {
+  margin: 0;
 }
 
 /* intro styles */
 
 #intro {
-    padding: 4rem 1rem 6rem 1rem;
-    margin: 0 auto;
-    text-align: center;
+  padding: 4rem 1rem 6rem 1rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .intro__name {
-    font-family: var(--font-secondary);
-    font-weight: 300;
+  font-family: var(--font-secondary);
+  font-weight: 300;
 }
 
 .intro__name--Edward {
-    font-style: italic;
-    font-weight: 600;
+  font-style: italic;
+  font-weight: 600;
 }
 
-.intro__job{
-    margin:0;
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    color: var(--color-text-on-secondary);
-    font-weight: 600;
-     margin-bottom: 2rem;
+.intro__job {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  color: var(--color-text-on-secondary);
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 .intro__image {
+  max-width: 420px;
+  max-height: 420px;
+}
+
+/* about me */
+
+#aboutMe {
+  padding: 4rem 1rem 6rem 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+  .aboutMe__image {
     max-width: 420px;
     max-height: 420px;
+  }
+
+#aboutMe p {
+    text-align: left;
+}
+
+.aboutMe__skills-heading {
+    color: var(--color-text-on-secondary);
+}
+
+.aboutMe__skills-list {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem
+}
+
+.aboutMe__skills-list-item {
+    background-color: var(--color-button-primary-bg);
+    color: var(--color-button-primary-text);
+    border-radius: 16px;
+    padding: 0.5em 0.5em;
 }
 
 @media (min-width: 860px) {
+ #intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
+  #aboutMe {
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
 
-    #intro{
-        max-width:1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
+  .aboutMe__image {
+    max-width: 420px;
+    max-height: 420px;
+  }
 }
