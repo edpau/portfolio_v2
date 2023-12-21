@@ -36,9 +36,9 @@
                         </a>
                     </h1>
                 </li>
-                <li class="nav__list-item" href="#project">Work</li>
-                <li class="nav__list-item">About</li>
-                <li class="nav__list-item">Contact</li>
+                <li class="nav__list-item"><a class="nav__link" href="#aboutMe">About</a></li>
+                <li class="nav__list-item"><a class="nav__link" href="#myWorks">Work</a></li>
+                <li class="nav__list-item"><a class="nav__link" href="#myWorks">Contact</a></li>
                 <!-- TODO change icon to SVG, but sr-only using cloudflare -->
                 <li class="nav__list-item">
                     <a class="nav__link" href="https://www.linkedin.com/in/edwardpau/" target="_blank">
@@ -55,7 +55,7 @@
                 <!-- TODO remove mobile and update email in the CV -->
                 <li>
                     <a class="nav__link nav__link--resume"
-                        href="https://drive.google.com/file/d/1EHAXx4wn2h4XQSe6Ui044rlvLo9H04VR/view?usp=share_link"
+                        href="https://drive.google.com/file/d/1yiw4BcFJkM9Sn_BzCNFZ04-SAnrhLUg4/view?usp=drive_link"
                         target="_blank">Resume
                     </a>
                 </li>
@@ -156,71 +156,64 @@
                         <h4 class="work__subheading">Latest work</h4>
                         <h3 class="work__heading">Health Boss</h3>
                         <p class="work__description blackbox">
-                            Description of the project. This should be fairly concise while
-                            also describing the key components that you developed or worked
-                            on. It can be as long as you need it to be but should at least be
-                            a few sentences long. Be sure to include specific links anywhere
-                            in the description. A link looks like
-                            <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links
-                            look <a href="#">like this</a> and
-                            <a href="#">like this</a>.
+                            Health Boss is a progressive web app designed for health tracking, it monitors users'
+                            calorie and macro-nutrient intake,
+                            tracks exercise levels, calories burned, and offers insightful statistical feedback.
+                            <a href="https://health-boss.vercel.app">Please join us here</a>.
                         </p>
                         <h4 class="work__subheading">Technologies used:</h4>
                         <ul class="work__tech-list">
-                            <li class="work__tech-list-item">HTML</li>
-                            <li class="work__tech-list-item">CSS</li>
-                            <li class="work__tech-list-item">SVG</li>
+                            <li class="work__tech-list-item">Next.js</li>
+                            <li class="work__tech-list-item">Tailwinds CSS</li>
+                            <li class="work__tech-list-item">Prisma</li>
+                            <li class="work__tech-list-item">MongoDB</li>
+                            <li class="work__tech-list-item">Trello</li>
+                            <li class="work__tech-list-item">Git</li>
+
                         </ul>
                     </div>
-                    <img class="work__img" src="img/healthBoss.png"
-                        alt="Screenshot of the Wall of Wonder." />
+                    <img class="work__img" src="img/healthBoss.png" alt="Screenshot of the Wall of Wonder." />
                 </article>
                 <article class="myWork__article myWork__article--reverse">
                     <div class="work">
                         <h3 class="work__heading">Servi Home</h3>
                         <p class="work__description blackbox">
-                            Description of the project. This should be fairly concise while
-                            also describing the key components that you developed or worked
-                            on. It can be as long as you need it to be but should at least be
-                            a few sentences long. Be sure to include specific links anywhere
-                            in the description. A link looks like
-                            <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links
-                            look <a href="#">like
-                                this</a> and
-                            <a href="#">like this</a>.
+                            ServiHomeInc is a desktop website and mobile app catering to both customers and cleaners.
+                            Customers can schedule
+                            cleaning services, while cleaners can receive and fulfil orders though the platform. <br>
+                            We helped on refactoring to TS and improve the website code base. Adapted the desktop
+                            website for mobile compatibility.
+                            <a href="https://servihome-demo-miklyxs-projects.vercel.app">Please visit</a>.
                         </p>
                         <h4 class="work__subheading">Technologies used:</h4>
                         <ul class="work__tech-list">
-                            <li class="work__tech-list-item">HTML</li>
-                            <li class="work__tech-list-item">CSS</li>
-                            <li class="work__tech-list-item">SVG</li>
+                            <li class="work__tech-list-item">Next.js</li>
+                            <li class="work__tech-list-item">Tailwinds CSS</li>
+                            <li class="work__tech-list-item">Cypress</li>
+                            <li class="work__tech-list-item">zustand</li>
+                            <li class="work__tech-list-item">NextAuth</li>
+
                         </ul>
                     </div>
-                    <img id="sss" class="work__img" src="img/serviHome.png"
-                        alt="Screenshot of the Wall of Wonder." />
+                    <img id="sss" class="work__img" src="img/serviHome.png" alt="Screenshot of the Wall of Wonder." />
                 </article>
                 <article class="myWork__article">
                     <div class="work">
                         <h3 class="work__heading">Share A Smile</h3>
                         <p class="work__description blackbox">
-                            Description of the project. This should be fairly concise while
-                            also describing the key components that you developed or worked
-                            on. It can be as long as you need it to be but should at least be
-                            a few sentences long. Be sure to include specific links anywhere
-                            in the description. A link looks like
-                            <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links
-                            look <a href="#">like this</a> and
-                            <a href="#">like this</a>.
+                            Share A Smile is a progressive web app that allows individuals to post their unwanted items
+                            or volunteer to share their
+                            skills with others, all in exchange for a smile.
                         </p>
                         <h4 class="work__subheading">Technologies used:</h4>
                         <ul class="work__tech-list">
-                            <li class="work__tech-list-item">HTML</li>
+                            <li class="work__tech-list-item">React.js</li>
                             <li class="work__tech-list-item">CSS</li>
-                            <li class="work__tech-list-item">SVG</li>
+                            <li class="work__tech-list-item">Node.js</li>
+                            <li class="work__tech-list-item">MongoDB</li>
                         </ul>
                     </div>
-                    <img class="work__img" src="img/shareASmile.png"
-                        alt="Screenshot of the Wall of Wonder." />
+                    <img class="work__img" src="img/shareASmile.png" alt="Screenshot of the Wall of Wonder." />
                 </article>
             </section>
         </div>

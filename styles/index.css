@@ -163,8 +163,6 @@
     justify-content: flex-start;
   }
 
-
-
   .myWork__article{
         display: grid;
         grid-template-columns: repeat(10, 1fr);
@@ -174,6 +172,11 @@
         max-width: 1200px;
         margin: 0 auto;
     }
+
+    .myWorks__heading{
+      text-align: left;
+    }
+
    .work__img {
         grid-column: 1/6;
         grid-row: 1/2;
@@ -197,10 +200,15 @@
    .myWork__article--reverse .work__img {
         grid-column: 6/11;
         grid-row: 1/2;
-        border: 5px solid red;
     }
     .myWork__article--reverse .work__tech-list {
         justify-content: flex-start;
+    }
+
+    /* first work has one more <h4>Latest work</h4>, other work don't have */
+ 
+    article:not(:first-of-type) h3.work__heading {
+      margin-top: 1.4rem;
     }
 
 
