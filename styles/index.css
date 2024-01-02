@@ -28,12 +28,20 @@
   font-size: 3rem;
   color: var(--color-text-on-secondary);
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-right: 2rem;
 }
 
 .intro__image {
   max-width: 420px;
   max-height: 420px;
+}
+
+/*TODO fix later */
+.button-container {
+  margin-top: 3rem;
+}
+.button-container a {
+  margin-right: 2rem;
 }
 
 /* about me */
