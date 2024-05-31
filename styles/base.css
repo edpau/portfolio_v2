@@ -45,7 +45,7 @@ html {
 
     /* use for nav list sliding, prevent overflow */
     overflow-x: hidden; 
-    
+
     font-family: var(--font-family);
   }
   
@@ -236,7 +236,6 @@ a:hover {
     margin: 0;
     inset: 0 0 0 0;
     transform: translateX(0);
-    background-color: transparent;
 
     align-items: center;
   }
