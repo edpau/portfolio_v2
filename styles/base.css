@@ -44,11 +44,9 @@ html {
     width: 100vw;
 
     /* use for nav list sliding, prevent overflow */
-    /* overflow-x: hidden;  */
-
+    overflow-x: hidden; 
+    
     font-family: var(--font-family);
-
-    border: red 1px solid;
   }
   
   h1,
@@ -172,7 +170,6 @@ a:hover {
 /* button */
 .button {
   font-size: 1.4rem;
-  padding: 0 3rem;
   height: 80px;
   border: 5px solid var(--color-button-border);
   cursor: pointer;
@@ -244,6 +241,9 @@ a:hover {
     align-items: center;
   }
 
+    .button {
+       padding: 0 3rem;
+    }
 
 
 }
