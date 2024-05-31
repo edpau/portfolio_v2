@@ -28,18 +28,16 @@
 
 <body class="body">
     <header class="header">
-        <!-- <a class="header__link" href="/">Edward Pau</a> -->
+        <a class="header__link" href="/">Edward Pau</a>
         <nav class="nav">
-            <ul class="nav__list">
-
-                <li class="nav__list-item" href="#project">
-                    <h1>
-                        <a class="nav__link" href="index.html">
-                            <span class="nav__list-icon--main fa-solid fa-terminal" aria-hidden="true"></span>
-                            <span>Edward Pau</span>
-                        </a>
-                    </h1>
-                </li>
+            <h1 class="nav__header">
+                <a class="nav__header-link" href="index.html">
+                    <span class="nav__header-icon--main fa-solid fa-terminal" aria-hidden="true"></span>
+                    <span>Edward Pau</span>
+                </a>
+            </h1>
+            <button class="nav__button" aria-controls="main-nav-list" aria-expanded="false" aria-label="Menu"></button>
+            <ul id="main-nav-list" class="nav__list" data-visible="false">
                 <li class="nav__list-item"><a class="nav__link" href="#aboutMe">About</a></li>
                 <li class="nav__list-item"><a class="nav__link" href="#myWorks">Work</a></li>
                 <li class="nav__list-item"><a class="nav__link" href="#myWorks">Contact</a></li>
@@ -66,8 +64,8 @@
             </ul>
         </nav>
 
+        <div class="gradient"></div>
     </header>
-    <div class="gradient"></div>
     <main class="main">
 
         <section id="intro">
@@ -83,7 +81,7 @@
             </div> 
 
             <div class="intro__image-container">
-                <img class="intro__image" src="img/intro_pic.png" alt="Edward cartoon photo waving hand">
+                <!-- <img class="intro__image" src="img/intro_pic.png" alt="Edward cartoon photo waving hand"> -->
             </div>
         </section>
         <div class="gradient"></div>
@@ -230,6 +228,7 @@
 
         <section id="contact-me"></section>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
