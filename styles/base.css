@@ -46,7 +46,6 @@ html {
     /* use for nav list sliding, prevent overflow */
     overflow-x: hidden; 
 
-    font-family: var(--font-family);
   }
   
   h1,
@@ -170,6 +169,7 @@ a:hover {
 /* button */
 .button {
   font-size: 1.4rem;
+  font-family: var(--font-primary);;
   height: 80px;
   border: 5px solid var(--color-button-border);
   cursor: pointer;
